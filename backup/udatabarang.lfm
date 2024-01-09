@@ -1,0 +1,119 @@
+object TfrmDataBarang: TTfrmDataBarang
+  Left = 190
+  Height = 516
+  Top = 370
+  Width = 847
+  Caption = 'Data Master'
+  ClientHeight = 516
+  ClientWidth = 847
+  DesignTimePPI = 144
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object LJudul: TLabel
+    Left = 296
+    Height = 38
+    Top = 40
+    Width = 279
+    Caption = 'Pencarian Data Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -28
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ECari: TEdit
+    Left = 256
+    Height = 33
+    Top = 117
+    Width = 232
+    TabOrder = 0
+  end
+  object BCari: TButton
+    Left = 528
+    Height = 38
+    Top = 112
+    Width = 113
+    Caption = 'Cari'
+    OnClick = BCariClick
+    TabOrder = 1
+  end
+  object BReset: TButton
+    Left = 672
+    Height = 38
+    Top = 112
+    Width = 113
+    Caption = 'Reset'
+    OnClick = BResetClick
+    TabOrder = 2
+  end
+  object DBGridDataBarang: TDBGrid
+    Left = 88
+    Height = 238
+    Top = 168
+    Width = 699
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSourceDataBarang
+    TabOrder = 3
+    OnCellClick = DBGridDataBarangCellClick
+  end
+  object BTambahBarang: TButton
+    Left = 256
+    Height = 38
+    Top = 432
+    Width = 160
+    Caption = 'Tambah Barang'
+    OnClick = BTambahBarangClick
+    TabOrder = 4
+  end
+  object BUpdateBarang: TButton
+    Left = 448
+    Height = 38
+    Top = 432
+    Width = 160
+    Caption = 'Update Barang'
+    OnClick = BUpdateBarangClick
+    TabOrder = 5
+  end
+  object BHapusData: TButton
+    Left = 640
+    Height = 38
+    Top = 432
+    Width = 146
+    Caption = 'Hapus Data'
+    OnClick = BHapusDataClick
+    TabOrder = 6
+  end
+  object DataSourceDataBarang: TDataSource
+    DataSet = SQLQueryDataBarang
+    Left = 613
+    Top = 296
+  end
+  object SQLQueryDataBarang: TSQLQuery
+    FieldDefs = <>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 216
+    Top = 296
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 352
+    Top = 296
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan2'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    ConnectorType = 'ODBC'
+    Left = 488
+    Top = 296
+  end
+end
