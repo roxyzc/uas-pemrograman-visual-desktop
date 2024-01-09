@@ -14,7 +14,7 @@ type
 
   TTfrmTambahDetailTransaksi = class(TForm)
     BTambahDetailTransaksi: TButton;
-    DataSource1: TDataSource;
+    DataSourcePilihBarang: TDataSource;
     DataSource2: TDataSource;
     DBLookupBarang: TDBLookupComboBox;
     EJumlah: TEdit;
@@ -25,6 +25,7 @@ type
     Label3: TLabel;
     SQLConnector1: TSQLConnector;
     SQLQuery1: TSQLQuery;
+    SQLQueryPilihBarang: TSQLQuery;
     SQLQuery2: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
     procedure BTambahDetailTransaksiClick(Sender: TObject);
@@ -56,7 +57,7 @@ var
   today: TDateTime;
 begin
   try
-    with SQLQuery1 do
+    with SQLQueryPilihBarang do
     begin
       Close;
       SQL.Text:='SELECT * FROM data_barang WHERE id = :id';
@@ -129,6 +130,25 @@ begin
            Params.ParamByName('id_barang').AsInteger:= StrToInt(idBarang);
            ExecSQL;
 
+           try
+             with SQLQuery1 do
+             begin
+               Close;
+               SQL.Clear;
+               SQL.ADD('SELECT dt.id, t.customer, t.tanggal as tanggal_transaksi, dt.jumlah, dt.diskon as diskon_beli_barang, t.diskon as diskon_transaksi, t.sub_total, t.total, db.harga_beli, db.harga_jual, db.nama as nama_barang, k.nama as kategori FROM detail_transaksi as dt JOIN data_barang as db ON db.id = dt.barang_id JOIN kategori as k ON k.id = db.kategori_id JOIN transaksi as t ON dt.transaksi_id = t.id WHERE t.customer = :customer ORDER BY t.tanggal DESC LIMIT 1');
+               Params.ParamByName('customer').AsString := nama_customer;
+               Open;
+             end;
+
+             s := extractfilepath(application.ExeName) + 'apage.lrf';
+             frDBDataSet1.DataSet := SQLQuery1;
+             frReport1.DataSet := frDBDataSet1;
+             frReport1.LoadFromFile(s);
+             frReport1.ShowReport;
+           finally
+             frReport1.Clear;
+           end;
+
            SQLTransaction1.Commit;
            ModalResult := mrOk;
          end;
@@ -147,7 +167,7 @@ end;
 procedure TTfrmTambahDetailTransaksi.ambilDataBarang;
 begin
   try
-    with SQLQuery1 do
+    with SQLQueryPilihBarang do
     begin
       Close;
       SQL.Text:='SELECT * FROM data_barang';
@@ -166,7 +186,7 @@ end;
 
 procedure TTfrmTambahDetailTransaksi.FormCreate(Sender: TObject);
 begin
-  SQLQuery1.Open;
+  SQLQueryPilihBarang.Open;
 end;
 
 procedure TTfrmTambahDetailTransaksi.DBLookupBarangChange(Sender: TObject);

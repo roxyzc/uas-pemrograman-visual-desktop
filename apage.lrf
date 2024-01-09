@@ -7,7 +7,7 @@
     <KeyWords Value=""/>
     <Comments Value=""/>
     <ReportCreateDate Value="2024-01-08 18:16:53"/>
-    <ReportLastChange Value="2024-01-08 18:19:19"/>
+    <ReportLastChange Value="2024-01-09 20:15:04"/>
     <ReportVersionBuild Value=""/>
     <ReportVersionMajor Value=""/>
     <ReportVersionMinor Value=""/>
@@ -362,9 +362,9 @@
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="517"/>
+            <Left Value="461"/>
             <Top Value="94"/>
-            <Width Value="204"/>
+            <Width Value="260"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -418,9 +418,9 @@
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="517"/>
+            <Left Value="461"/>
             <Top Value="130"/>
-            <Width Value="204"/>
+            <Width Value="260"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -435,7 +435,7 @@
           <Data>
             <Format Value="33751086"/>
             <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;tanggal_transaksi&quot;]&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;tanggal_transaksi&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -474,9 +474,9 @@
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="517"/>
+            <Left Value="461"/>
             <Top Value="166"/>
-            <Width Value="204"/>
+            <Width Value="260"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -491,7 +491,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;customer&quot;]&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;customer&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -715,7 +715,7 @@
           <Data>
             <Format Value="16973868"/>
             <FormatStr Value=""/>
-            <Memo Value="RP.[SUM([SQLQuery3.&quot;sub_total&quot;])]&#xD;&#xA;"/>
+            <Memo Value="RP.[SUM([SQLQuery1.&quot;sub_total&quot;])]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -771,7 +771,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;diskon_transaksi&quot;]%&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;diskon_transaksi&quot;]%&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -827,7 +827,7 @@
           <Data>
             <Format Value="16973870"/>
             <FormatStr Value=""/>
-            <Memo Value="RP.[SUM([SQLQuery3.&quot;total&quot;])]&#xD;&#xA;"/>
+            <Memo Value="RP.[SQLQuery1.&quot;total&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -860,15 +860,15 @@
           <Cursor Value="0"/>
         </Object17>
         <Object18>
-          <Name Value="Memo13"/>
+          <Name Value="Memo14"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="15"/>
+            <Left Value="59"/>
             <Top Value="318"/>
-            <Width Value="68"/>
+            <Width Value="164"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -883,7 +883,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="[LINE#]&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;nama_barang&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -916,15 +916,15 @@
           <Cursor Value="0"/>
         </Object18>
         <Object19>
-          <Name Value="Memo14"/>
+          <Name Value="Memo15"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="83"/>
+            <Left Value="223"/>
             <Top Value="318"/>
-            <Width Value="160"/>
+            <Width Value="116"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -939,7 +939,7 @@
           <Data>
             <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;nama_barang&quot;]&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;jumlah&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -972,15 +972,15 @@
           <Cursor Value="0"/>
         </Object19>
         <Object20>
-          <Name Value="Memo15"/>
+          <Name Value="Memo16"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="243"/>
+            <Left Value="340"/>
             <Top Value="318"/>
-            <Width Value="116"/>
+            <Width Value="140"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -993,9 +993,9 @@
             <Restrictions Value=""/>
           </Frames>
           <Data>
-            <Format Value="556"/>
+            <Format Value="16973868"/>
             <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;jumlah&quot;]&#xD;&#xA;"/>
+            <Memo Value="RP.[SQLQuery1.&quot;harga_jual&quot;]&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -1028,15 +1028,15 @@
           <Cursor Value="0"/>
         </Object20>
         <Object21>
-          <Name Value="Memo16"/>
+          <Name Value="Memo17"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="360"/>
+            <Left Value="480"/>
             <Top Value="318"/>
-            <Width Value="140"/>
+            <Width Value="104"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -1049,9 +1049,9 @@
             <Restrictions Value=""/>
           </Frames>
           <Data>
-            <Format Value="16973868"/>
+            <Format Value="556"/>
             <FormatStr Value=""/>
-            <Memo Value="RP.[SQLQuery3.&quot;harga_jual&quot;]&#xD;&#xA;"/>
+            <Memo Value="[SQLQuery1.&quot;diskon_beli_barang&quot;]%&#xD;&#xA;"/>
             <Script Value=""/>
             <GapX Value="0"/>
             <GapY Value="0"/>
@@ -1084,69 +1084,13 @@
           <Cursor Value="0"/>
         </Object21>
         <Object22>
-          <Name Value="Memo17"/>
-          <ClassName Value="TfrMemoView"/>
-          <Visible Value="True"/>
-          <Typ Value="gtMemo"/>
-          <StreamMode Value="0"/>
-          <Size>
-            <Left Value="500"/>
-            <Top Value="318"/>
-            <Width Value="104"/>
-            <Height Value="20"/>
-          </Size>
-          <Flags Value="3"/>
-          <FillColor Value="clNone"/>
-          <Frames>
-            <FrameColor Value="clBlack"/>
-            <FrameStyle Value="frsSolid"/>
-            <FrameWidth Value="1"/>
-            <FrameBorders Value="frbLeft,frbTop,frbRight,frbBottom"/>
-            <Restrictions Value=""/>
-          </Frames>
-          <Data>
-            <Format Value="556"/>
-            <FormatStr Value=""/>
-            <Memo Value="[SQLQuery3.&quot;diskon_beli_barang&quot;]%&#xD;&#xA;"/>
-            <Script Value=""/>
-            <GapX Value="0"/>
-            <GapY Value="0"/>
-            <OnClick Value=""/>
-            <OnMouseEnter Value=""/>
-            <OnMouseLeave Value=""/>
-            <DetailReport Value=""/>
-            <ParagraphGap Value="0"/>
-            <LineSpacing Value="2"/>
-          </Data>
-          <Tag Value=""/>
-          <FURLInfo Value=""/>
-          <Font>
-            <Name Value="Arial"/>
-            <Size Value="12"/>
-            <Color Value="clBlack"/>
-            <Charset Value="0"/>
-            <Style Value="fsBold"/>
-          </Font>
-          <Highlight>
-            <FontStyle Value="2"/>
-            <FontColor Value="clBlack"/>
-            <FillColor Value="clWhite"/>
-            <HighlightStr Value=""/>
-          </Highlight>
-          <Alignment Value="taCenter"/>
-          <Layout Value="tlTop"/>
-          <Angle Value="0"/>
-          <Justify Value="False"/>
-          <Cursor Value="0"/>
-        </Object22>
-        <Object23>
           <Name Value="Memo18"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="603"/>
+            <Left Value="583"/>
             <Top Value="318"/>
             <Width Value="120"/>
             <Height Value="20"/>
@@ -1194,73 +1138,17 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object23>
-        <Object24>
-          <Name Value="Memo19"/>
-          <ClassName Value="TfrMemoView"/>
-          <Visible Value="True"/>
-          <Typ Value="gtMemo"/>
-          <StreamMode Value="0"/>
-          <Size>
-            <Left Value="14"/>
-            <Top Value="243"/>
-            <Width Value="68"/>
-            <Height Value="20"/>
-          </Size>
-          <Flags Value="3"/>
-          <FillColor Value="clNone"/>
-          <Frames>
-            <FrameColor Value="clBlack"/>
-            <FrameStyle Value="frsSolid"/>
-            <FrameWidth Value="1"/>
-            <FrameBorders Value="frbLeft,frbTop,frbRight,frbBottom"/>
-            <Restrictions Value=""/>
-          </Frames>
-          <Data>
-            <Format Value="556"/>
-            <FormatStr Value=""/>
-            <Memo Value="No&#xD;&#xA;"/>
-            <Script Value=""/>
-            <GapX Value="0"/>
-            <GapY Value="0"/>
-            <OnClick Value=""/>
-            <OnMouseEnter Value=""/>
-            <OnMouseLeave Value=""/>
-            <DetailReport Value=""/>
-            <ParagraphGap Value="0"/>
-            <LineSpacing Value="2"/>
-          </Data>
-          <Tag Value=""/>
-          <FURLInfo Value=""/>
-          <Font>
-            <Name Value="Arial"/>
-            <Size Value="12"/>
-            <Color Value="clBlack"/>
-            <Charset Value="0"/>
-            <Style Value="fsBold"/>
-          </Font>
-          <Highlight>
-            <FontStyle Value="2"/>
-            <FontColor Value="clBlack"/>
-            <FillColor Value="clWhite"/>
-            <HighlightStr Value=""/>
-          </Highlight>
-          <Alignment Value="taCenter"/>
-          <Layout Value="tlCenter"/>
-          <Angle Value="0"/>
-          <Justify Value="False"/>
-          <Cursor Value="0"/>
-        </Object24>
-        <Object25>
+        </Object22>
+        <Object23>
           <Name Value="Memo20"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="82"/>
+            <Left Value="58"/>
             <Top Value="243"/>
-            <Width Value="160"/>
+            <Width Value="164"/>
             <Height Value="20"/>
           </Size>
           <Flags Value="3"/>
@@ -1306,15 +1194,15 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object25>
-        <Object26>
+        </Object23>
+        <Object24>
           <Name Value="Memo21"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="242"/>
+            <Left Value="222"/>
             <Top Value="243"/>
             <Width Value="116"/>
             <Height Value="20"/>
@@ -1362,15 +1250,15 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object26>
-        <Object27>
+        </Object24>
+        <Object25>
           <Name Value="Memo22"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="359"/>
+            <Left Value="339"/>
             <Top Value="243"/>
             <Width Value="140"/>
             <Height Value="20"/>
@@ -1418,15 +1306,15 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object27>
-        <Object28>
+        </Object25>
+        <Object26>
           <Name Value="Memo23"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="499"/>
+            <Left Value="479"/>
             <Top Value="243"/>
             <Width Value="104"/>
             <Height Value="20"/>
@@ -1474,15 +1362,15 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object28>
-        <Object29>
+        </Object26>
+        <Object27>
           <Name Value="Memo24"/>
           <ClassName Value="TfrMemoView"/>
           <Visible Value="True"/>
           <Typ Value="gtMemo"/>
           <StreamMode Value="0"/>
           <Size>
-            <Left Value="602"/>
+            <Left Value="582"/>
             <Top Value="243"/>
             <Width Value="120"/>
             <Height Value="20"/>
@@ -1530,8 +1418,8 @@
           <Angle Value="0"/>
           <Justify Value="False"/>
           <Cursor Value="0"/>
-        </Object29>
-        <ObjectCount Value="29"/>
+        </Object27>
+        <ObjectCount Value="27"/>
       </Page1>
       <FVal>
         <Count Value="0"/>
