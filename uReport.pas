@@ -117,7 +117,7 @@ begin
   end;
   ECari.Text := '';
   DateEdit1.Date := 0;
-  DateEdit1.Date := 0;
+  DateEdit2.Date := 0;
 end;
 
 end.

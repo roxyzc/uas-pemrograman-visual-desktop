@@ -108,7 +108,7 @@ object TfrmReport: TTfrmReport
     MaxLength = 0
     TabOrder = 6
     Text = 'DateEdit2'
-    TextHint = 'From Date'
+    TextHint = 'To Date'
   end
   object Label3: TLabel
     Left = 616

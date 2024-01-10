@@ -100,10 +100,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uTambahDetailTransaksi"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="120"/>
-        <CursorPos X="50" Y="140"/>
+        <CursorPos X="73" Y="139"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -114,8 +112,8 @@
         <ComponentName Value="TfrmReport"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="86"/>
         <CursorPos X="7" Y="106"/>
         <UsageCount Value="34"/>
         <Loaded Value="True"/>
@@ -255,7 +253,7 @@
         <UsageCount Value="11"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="27">
       <Position>
         <Filename Value="uReport.pas"/>
         <Caret Line="89" Column="17" TopLine="72"/>
@@ -325,10 +323,6 @@
         <Caret Line="92" Column="7" TopLine="61"/>
       </Position>
       <Position>
-        <Filename Value="udatakategoribarang.pas"/>
-        <Caret Line="13" Column="49" TopLine="149"/>
-      </Position>
-      <Position>
         <Filename Value="utambahbarang.pas"/>
         <Caret Line="81" Column="56" TopLine="66"/>
       </Position>
@@ -367,10 +361,6 @@
       <Position>
         <Filename Value="utambahdetailtransaksi.pas"/>
         <Caret Line="140" Column="21" TopLine="130"/>
-      </Position>
-      <Position>
-        <Filename Value="utambahdetailtransaksi.pas"/>
-        <Caret Line="57" Column="20" TopLine="119"/>
       </Position>
       <Position>
         <Filename Value="utambahdetailtransaksi.pas"/>
